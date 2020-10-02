@@ -1,6 +1,6 @@
 var player1, player2, player1_name, player2_name, play_board, board_full;
 var board_container = document.querySelector(".play-area");
-var winner_statement = document.getElementById("winner");
+var winner = document.getElementById("winner");
 var turn = 1;
 var current_player = document.getElementById("current_player");
 current_player.style.display = "block";
