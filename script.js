@@ -3,7 +3,6 @@ var board_container = document.querySelector(".play-area");
 var winner = document.getElementById("winner");
 var turn = 1;
 var current_player = document.getElementById("current_player");
-current_player.style.display = "block";
 
 function start_board() {
   reset_board();
@@ -18,6 +17,7 @@ function start_board() {
 };
 
 function reset_board() {
+  current_player.style.display = "block";
   play_board = ["", "", "", "", "", "", "", "", ""];
   board_full = false;
   winner.classList.remove("player1Win");
