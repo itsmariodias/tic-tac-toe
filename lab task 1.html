@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="players">
+            <h2 id="entername">Enter player names:</h2>
+            <input id="player1" type="text" placeholder="Player X">
+            <input id="player2" type="text" placeholder="Player O"><br>
+            <button id="startbtn" onclick="start_board()">START</button>
+        </div>
+        <div id="board" style="display: none">
+            <h2 id="current_player" style="display: none; margin-bottom: 1em;"></h2>
+            <div class="play-area"></div>
+            <h2 id="winner"></h2>
+            <button id="resetbtn" onclick="reset_board()">RESET</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
